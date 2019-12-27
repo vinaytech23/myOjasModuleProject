@@ -1,0 +1,31 @@
+<p>input-output works!</p>
+
+
+
+
+<br><br>
+<!-- ================================================================================ -->
+<div class="container">
+    <table class="table table-bordered">
+        <thead>
+            <tr class="thead-dark ">
+                <th>Name</th>
+                <th>Department</th>
+                <th>Designation</th>
+                <th>City</th>
+                <th>Salary</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let data of passing_data">
+                <td scope="row">{{data.name}} </td>
+                <td> {{data.dept}} </td>
+                <td> {{data.design}} </td>
+                <td> {{data.city}} </td>
+                <td> {{data.salary}} </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

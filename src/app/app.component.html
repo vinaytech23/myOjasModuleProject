@@ -1,0 +1,28 @@
+<div class="container">
+
+    <nav class="nav ">
+        <a [routerLink]="[ '/colorlist' ]" class="nav-link" routerLinkActive="active">colorlist</a>
+        <a [routerLink]="[ '/emicalc' ]" class="nav-link" routerLinkActive="active ">Emi caluculator</a>
+        <a [routerLink]="[ '/struct' ]" class="nav-link" routerLinkActive="active">Struct&attr dir</a>
+        <a [routerLink]="[ '/input_output' ]" class="nav-link" routerLinkActive="active">input_output</a>
+        <a [routerLink]="[ '/output' ]" class="nav-link" routerLinkActive="active">output</a>
+        <a [routerLink]="[ '/dynamicvalues' ]" class="nav-link" routerLinkActive="active">dynamicvalues</a>
+        <a [routerLink]="[ '/templatedriven' ]" class="nav-link" routerLinkActive="active">templatedriven</a>
+        <a [routerLink]="[ '/reactiveform' ]" class="nav-link" routerLinkActive="active">reactiveform</a>
+        <a [routerLink]="[ '/servicenow' ]" class="nav-link" routerLinkActive="active">servicenow</a>
+        <a [routerLink]="[ '/crudOps' ]" class="nav-link" routerLinkActive="active">crudOps</a>
+        <a [routerLink]="[ '/input' ]" class="nav-link" routerLinkActive="active">input</a>
+
+    </nav>
+    <div class="jumbotron">
+        <!-- <app-input-output [passing_data]='student_data'></app-input-output> -->
+        <!-- <app-output (send_str)="recd($event)"></app-output> -->
+
+        <router-outlet></router-outlet>
+    </div>
+    <hr><hr><hr>
+<!-- ============================================================= -->
+
+          <app-input [myname]="mname"></app-input>
+
+</div>

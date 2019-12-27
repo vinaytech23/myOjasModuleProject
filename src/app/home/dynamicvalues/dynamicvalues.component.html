@@ -1,0 +1,25 @@
+<p>dynamicvalues works!</p>
+
+<select [(ngModel)]="selectedValueAA">
+		
+		<option *ngFor="let b of countriesArray" [value]="b">{{b}}</option>
+	  </select>
+
+<h1>selected value is : {{selectedValueAA}} </h1>
+<br>
+<hr>
+<!-- <select [(ngModel)]="selectedValue">
+		
+		<option *ngFor="let c of countries" [ngValue]="c">{{c.name}}</option>
+	  </select>
+
+<h1>selected value is : {{selectedValue.name}} </h1> -->
+<br>
+<hr>
+
+<!-- <div class="form-check" *ngFor="let item of coursesArray; let i=index">
+    <label><input type="checkbox" [(ngModel)]=""  [value]='item'>{{item}} </label>
+</div> -->
+
+
+<!-- <h1>Selected courses: {{}} </h1> -->
